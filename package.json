@@ -16,6 +16,7 @@
     "src",
     "lib",
     "android",
+    "ios",
     "app.plugin.js",
     "!android/build",
     "!android/gradle",
@@ -30,7 +31,8 @@
   "scripts": {
     "example": "yarn workspace react-native-upi-app-launcher-example",
     "clean": "del-cli android/build example/android/build example/android/app/build lib",
-    "prepare": "bob build",
+    "build": "bob build",
+    "prepack": "bob build",
     "typecheck": "tsc",
     "lint": "eslint \"**/*.{js,ts,tsx}\""
   },
