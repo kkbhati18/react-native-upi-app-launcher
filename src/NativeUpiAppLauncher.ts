@@ -18,4 +18,4 @@ export interface Spec extends TurboModule {
   launchUpiApp(packageName: string, url: string): Promise<LaunchUpiAppNativeResult>;
 }
 
-export default TurboModuleRegistry.getEnforcing<Spec>('UpiAppLauncher');
+export default TurboModuleRegistry.get<Spec>('UpiAppLauncher');
